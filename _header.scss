@@ -3,6 +3,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: end;
+    align-items: center;
 
     img {
         justify-self: start;
@@ -10,5 +11,20 @@ header {
 
     .nav-ul {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        button {
+            display: none;
+        }
+
+        .nav-ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(100px, 150px));
+            justify-items: end;
+        }
     }
 }

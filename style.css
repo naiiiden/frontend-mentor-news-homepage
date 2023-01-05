@@ -22,10 +22,23 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: end;
+  align-items: center;
 }
 header img {
   justify-self: start;
 }
 header .nav-ul {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header button {
+    display: none;
+  }
+  header .nav-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 150px));
+    justify-items: end;
+  }
 }/*# sourceMappingURL=style.css.map */
