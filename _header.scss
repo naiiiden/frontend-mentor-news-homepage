@@ -1,0 +1,14 @@
+header {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+
+    img {
+        justify-self: start;
+    }
+
+    .nav-ul {
+        display: none;
+    }
+}
