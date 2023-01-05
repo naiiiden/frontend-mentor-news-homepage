@@ -9,9 +9,15 @@ header {
         justify-self: start;
     }
 
+    button {
+        border: none;
+        background: none;
+    }
+
     .nav-ul {
         display: none;
     }
+
 }
 
 @media screen and (min-width: 1024px) {

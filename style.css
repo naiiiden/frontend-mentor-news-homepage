@@ -27,6 +27,10 @@ header {
 header img {
   justify-self: start;
 }
+header button {
+  border: none;
+  background: none;
+}
 header .nav-ul {
   display: none;
 }
