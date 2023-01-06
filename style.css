@@ -46,4 +46,11 @@ header .nav-ul {
     gap: 3rem;
     justify-items: end;
   }
+  header .nav-ul a {
+    text-decoration: none;
+    color: hsl(236deg, 13%, 42%);
+  }
+  header .nav-ul a:hover {
+    color: hsl(5deg, 85%, 63%);
+  }
 }/*# sourceMappingURL=style.css.map */

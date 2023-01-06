@@ -32,6 +32,15 @@ header {
             grid-auto-flow: column;
             gap: 3rem;
             justify-items: end;
+
+            a {
+                text-decoration: none;
+                color: $dark-grayish-blue;
+
+                &:hover {
+                    color: $soft-red;
+                }
+            }
         }
     }
 }
