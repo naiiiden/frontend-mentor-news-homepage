@@ -72,5 +72,15 @@ main {
                 background: $very-dark-blue;
             }
         }
+
+        .new-articles {
+            article {
+                a:hover {
+                    h3 {
+                        color: $soft-orange;
+                    }
+                }
+            }
+        }
     }
 }
