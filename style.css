@@ -109,6 +109,33 @@ main .new-articles article p {
 main .new-articles article:not(:last-child) {
   border-bottom: 1px solid hsl(233deg, 8%, 79%);
 }
+main .top-articles {
+  display: grid;
+  gap: 2rem;
+}
+main .top-articles article a {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-decoration: none;
+}
+main .top-articles article a img {
+  height: 100%;
+}
+main .top-articles article a .text-container {
+  grid-column: 2/auto;
+  padding: 1rem;
+}
+main .top-articles article a .text-container span {
+  font-size: 2rem;
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 700;
+}
+main .top-articles article a .text-container h3 {
+  color: hsl(240deg, 100%, 5%);
+}
+main .top-articles article a .text-container p {
+  color: hsl(236deg, 13%, 42%);
+}
 
 @media screen and (min-width: 1024px) {
   main .main-article a:hover {

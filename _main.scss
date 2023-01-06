@@ -63,6 +63,40 @@ main {
             }
         }
     }
+
+    .top-articles {
+        display: grid;
+        gap: 2rem;
+
+        article a {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-decoration: none;
+
+            img {
+                height: 100%;
+            }
+
+            .text-container {
+                grid-column: 2 / auto;
+                padding: 1rem;
+
+                span {
+                    font-size: 2rem;
+                    color: $grayish-blue;
+                    font-weight: 700;
+                }
+
+                h3 {
+                    color: $very-dark-blue;
+                }
+
+                p {
+                    color: $dark-grayish-blue;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
