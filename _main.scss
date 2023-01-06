@@ -32,6 +32,37 @@ main {
             font-weight: 700;
         }
     }
+
+    .new-articles {
+        background: $very-dark-blue;
+        padding: 1rem;
+
+        h2 {
+            color: $soft-orange;
+        }
+
+        article {
+            display: grid;
+            padding: 1.5rem 0;
+            gap: .75rem;
+
+            a {
+                text-decoration: none;
+            }
+
+            h3 {
+                color: $off-white;
+            }
+
+            p {
+                color: $grayish-blue;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $grayish-blue;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
