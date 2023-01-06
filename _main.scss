@@ -84,6 +84,7 @@ main {
 
             img {
                 height: 100%;
+                width: 100%;
             }
 
             .text-container {
@@ -123,6 +124,14 @@ main {
                     h3 {
                         color: $soft-orange;
                     }
+                }
+            }
+        }
+
+        .top-articles {
+            article a:hover {
+                h3 {
+                    color: $soft-red;
                 }
             }
         }
