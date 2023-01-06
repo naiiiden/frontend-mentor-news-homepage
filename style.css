@@ -56,12 +56,17 @@ header .nav-ul {
 }
 main {
   padding: 1rem;
+  display: grid;
+  gap: 4rem;
 }
 main .main-article {
   display: grid;
 }
 main .main-article .img-desktop {
   display: none;
+}
+main .main-article img {
+  width: 100%;
 }
 main .main-article h1 {
   color: hsl(240deg, 100%, 5%);
