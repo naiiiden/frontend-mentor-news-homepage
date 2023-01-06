@@ -166,13 +166,43 @@ main .top-articles article a .text-container p {
   }
 }
 @media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a a a b" "a a a b" "c c c c";
+    gap: 2rem;
+  }
+  main .main-article {
+    grid-area: a;
+    gap: 1rem;
+  }
+  main .main-article .img-mobile {
+    display: none;
+  }
+  main .main-article .img-desktop {
+    display: block;
+    height: 100%;
+  }
+  main .main-article .text-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .main-article h1 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.25;
+  }
   main .main-article a:hover {
     background: hsl(240deg, 100%, 5%);
+  }
+  main .new-articles {
+    grid-area: b;
+    height: 100%;
   }
   main .new-articles article a:hover h3 {
     color: hsl(35deg, 77%, 62%);
   }
   main .top-articles {
+    grid-area: c;
     grid-template-columns: repeat(3, 1fr);
   }
   main .top-articles article a:hover h3 {

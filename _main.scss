@@ -136,13 +136,46 @@ main {
 
 @media screen and (min-width: 1024px) {
     main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+                    "a a a b"
+                    "a a a b"
+                    "c c c c";
+        gap: 2rem;
+
         .main-article {
+            grid-area: a;
+            gap: 1rem;
+
+            .img-mobile {
+                display: none;
+            }
+
+            .img-desktop {
+                display: block;
+                height: 100%;
+            }
+
+            .text-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h1 {
+                font-size: 3rem;
+                margin: 0;
+                line-height: 1.25;
+            }
+
             a:hover {
                 background: $very-dark-blue;
             }
         }
 
         .new-articles {
+            grid-area: b;
+            height: 100%;
+
             article {
                 a:hover {
                     h3 {
@@ -153,6 +186,7 @@ main {
         }
 
         .top-articles {
+            grid-area: c;
             grid-template-columns: repeat(3, 1fr);
 
             article a:hover {
