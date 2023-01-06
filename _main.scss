@@ -176,6 +176,10 @@ main {
             grid-area: b;
             height: 100%;
 
+            h2 {
+                font-size: 2rem;
+            }
+
             article {
                 a:hover {
                     h3 {

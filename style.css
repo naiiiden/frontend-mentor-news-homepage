@@ -198,6 +198,9 @@ main .top-articles article a .text-container p {
     grid-area: b;
     height: 100%;
   }
+  main .new-articles h2 {
+    font-size: 2rem;
+  }
   main .new-articles article a:hover h3 {
     color: hsl(35deg, 77%, 62%);
   }
