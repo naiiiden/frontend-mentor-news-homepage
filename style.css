@@ -123,16 +123,23 @@ main .top-articles {
 }
 main .top-articles article a {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr, 1fr;
   text-decoration: none;
+  align-items: center;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 main .top-articles article a img {
-  height: 100%;
-  width: 100%;
+  min-width: 150px !important;
+  min-height: 150px !important;
+  max-width: 150px !important;
+  max-height: 150px !important;
 }
 main .top-articles article a .text-container {
   grid-column: 2/auto;
   padding: 1rem;
+  margin: auto 0;
 }
 main .top-articles article a .text-container span {
   font-size: 2rem;
@@ -147,12 +154,26 @@ main .top-articles article a .text-container p {
   color: hsl(236deg, 13%, 42%);
 }
 
+@media screen and (min-width: 700px) {
+  main .top-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .top-articles article a img {
+    min-width: 150px !important;
+    min-height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+  }
+}
 @media screen and (min-width: 1024px) {
   main .main-article a:hover {
     background: hsl(240deg, 100%, 5%);
   }
   main .new-articles article a:hover h3 {
     color: hsl(35deg, 77%, 62%);
+  }
+  main .top-articles {
+    grid-template-columns: repeat(3, 1fr);
   }
   main .top-articles article a:hover h3 {
     color: hsl(5deg, 85%, 63%);
