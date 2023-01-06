@@ -33,3 +33,13 @@ main {
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    main {
+        .main-article {
+            a:hover {
+                background: $very-dark-blue;
+            }
+        }
+    }
+}

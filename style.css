@@ -84,4 +84,10 @@ main .main-article a {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  main .main-article a:hover {
+    background: hsl(240deg, 100%, 5%);
+  }
 }/*# sourceMappingURL=style.css.map */
